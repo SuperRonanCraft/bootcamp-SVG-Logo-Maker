@@ -30,7 +30,11 @@ Download or Pull this project from GitHub <br />Open the project on your favorit
 
 - In terminal, run `node index` and enjoy!
 
-### Video coming soon
+
+https://github.com/SuperRonanCraft/bootcamp-SVG-Logo-Maker/assets/7385626/54c18392-9b30-4ed7-8e93-558835e9f207
+
+Example:  
+<img src="examples/logo.svg">
 
 ## How to Contribute
 
