@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="red" /><text x="50%" y="122" text-anchor="middle" font-size="90px" fill="blue">text</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200"><polygon points="150,0 275,200 25,200" style="fill:blue" /><text x="50%" y="125" text-anchor="middle" font-size="80px" fill="red">asd</text></svg>
