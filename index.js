@@ -1,27 +1,7 @@
+//Dependencies
 const inquirer = require("inquirer");
-const fs = require("fs");
-const { Triangle, Circle, Square } = require("./lib/shapes");
-
-//Functions
-//Get back a shape object
-function getShape({ text, textColor, shape, color }) {
-  switch (shape.toLowerCase()) {
-    case "square":
-      return new Square(text, color, textColor);
-    case "circle":
-      return new Circle(text, color, textColor);
-    case "triangle":
-      return new Triangle(text, color, textColor);
-  }
-}
-
-//Create and save SVG logo file
-function createSvg(shape) {
-  const svgTxt = shape.createShape();
-  fs.writeFile("./examples/logo.svg", svgTxt, () => {
-    console.log("File created!");
-  });
-}
+const { getShape } = require("./lib/shapes");
+const { createSvg } = require("./lib/svgGenerator");
 
 //User Interactions
 inquirer
@@ -37,7 +17,7 @@ inquirer
     },
     {
       type: "input",
-      message: "Enter the color you'd like your TEXT to be (hex or keyword):",
+      message: "Enter the COLOR you'd like your TEXT to be (hex or keyword):",
       name: "textColor",
     },
     {
@@ -48,7 +28,7 @@ inquirer
     },
     {
       type: "input",
-      message: "Enter the color you'd like your SHAPE to be (hex or keyword):",
+      message: "Enter the COLOR you'd like your SHAPE to be (hex or keyword):",
       name: "color",
     },
   ])
